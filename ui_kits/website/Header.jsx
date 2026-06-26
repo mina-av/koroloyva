@@ -28,7 +28,7 @@ function Header({ onNav, mobileOpen, setMobileOpen }) {
         <a href="#top" onClick={(e) => { e.preventDefault(); onNav("top"); }}
           style={{ fontFamily: "var(--font-display)", fontWeight: 500, fontSize: 25,
             letterSpacing: "0.02em", color: "var(--ink-900)", whiteSpace: "nowrap" }}>
-          Тамила Королёва
+          ТАМИЛА КОРОЛЁВА
         </a>
 
         <nav style={{ display: "flex", gap: 34, alignItems: "center" }} className="kit-desktop-nav">

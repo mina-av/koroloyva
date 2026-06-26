@@ -12,8 +12,9 @@ function Footer({ onNav }) {
       <div style={{ maxWidth: "var(--container-wide)", margin: "0 auto", padding: "var(--section-y-snug) var(--gutter) 40px" }}>
         <div style={{ display: "grid", gridTemplateColumns: "1.4fr 1fr 1fr 1fr", gap: 48 }} className="kit-footer-grid">
           <div>
-            <p style={{ fontFamily: "var(--font-display)", fontWeight: 500, fontSize: 26, color: "var(--cream-50)", margin: 0 }}>
-              Тамила Королёва
+            <p style={{ fontFamily: "var(--font-sans)", fontWeight: 600, fontSize: 13, letterSpacing: "0.14em",
+              textTransform: "uppercase", color: "var(--cream-50)", margin: 0 }}>
+              ТАМИЛА КОРОЛЁВА
             </p>
             <p style={{ fontFamily: "var(--font-sans)", fontSize: 15, lineHeight: 1.6, color: "rgba(247,242,233,0.66)", margin: "16px 0 0", maxWidth: "32ch" }}>
               Консультации по недвижимости и строительству. Более 20 лет практики.

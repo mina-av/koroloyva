@@ -20,7 +20,7 @@ function Hero({ onNav }) {
           <h1 style={{ fontFamily: "var(--font-display)", fontWeight: 400,
             fontSize: "clamp(2.6rem, 5.4vw, 5.2rem)", lineHeight: 1.02, letterSpacing: "-0.015em",
             color: "var(--cream-50)", margin: "24px 0 0" }}>
-            Недвижимость способна увеличивать капитал — или <span style={{ fontStyle: "italic", color: "var(--brass-400)" }}>уничтожать</span> его
+            Недвижимость способна увеличивать капитал — или <span style={{ fontStyle: "italic" }}>уничтожать</span> его
           </h1>
           <p style={{ fontFamily: "var(--font-sans)", fontSize: "clamp(1rem, 1.3vw, 1.25rem)",
             lineHeight: 1.6, color: "rgba(247,242,233,0.85)", maxWidth: "60ch", margin: "30px 0 0" }}>
