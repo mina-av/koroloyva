@@ -27,7 +27,7 @@ function Frame({ children, bg = "cream", image, index, label, style }) {
         <span style={{ fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase",
           color: dark ? "rgba(247,242,233,0.6)" : "var(--stone-400)" }}>{label}</span>
         {index && <span style={{ fontFamily: "var(--font-display)", fontSize: 15,
-          color: dark ? "var(--brass-400)" : "var(--brass-600)" }}>{index}</span>}
+          color: dark ? "rgba(247,242,233,0.45)" : "var(--stone-400)" }}>{index}</span>}
       </div>
       <div style={{ position: "relative", zIndex: 2, width: "100%", height: "100%" }}>{children}</div>
     </div>
@@ -42,10 +42,10 @@ function TitleSlide() {
         <Eyebrow onDark>20+ лет практики</Eyebrow>
         <h1 style={{ fontFamily: "var(--font-display)", fontWeight: 400, fontSize: 58, lineHeight: 1.12,
           letterSpacing: "-0.015em", color: "var(--cream-50)", margin: "20px 0 0" }}>
-          Недвижимость способна увеличивать капитал — <span style={{ fontStyle: "italic", color: "var(--brass-400)" }}>или уничтожать</span> его
+          Недвижимость способна увеличивать капитал или <span style={{ fontStyle: "italic" }}>уничтожать</span> его
         </h1>
         <p style={{ fontSize: 19, lineHeight: 1.5, color: "rgba(247,242,233,0.85)", maxWidth: "58ch", margin: "32px 0 0" }}>
-          Разница редко в бюджете. Чаще — в качестве решений на каждом этапе.
+          Разница редко в бюджете. Чаще в качестве решений на каждом этапе.
         </p>
       </div>
     </Frame>
@@ -77,7 +77,7 @@ function ProblemSlide() {
           {QUESTIONS.map((q, i) => (
             <div key={i} style={{ display: "flex", gap: 20, padding: "20px 0",
               borderTop: "1px solid var(--border-on-ink)" }}>
-              <span style={{ fontFamily: "var(--font-display)", fontSize: 20, color: "var(--brass-400)", flex: "none", width: 30 }}>
+              <span style={{ fontFamily: "var(--font-display)", fontSize: 20, color: "rgba(247,242,233,0.45)", flex: "none", width: 30 }}>
                 {String(i + 1).padStart(2, "0")}
               </span>
               <span style={{ fontSize: 18, lineHeight: 1.4, color: "var(--cream-50)" }}>{q}</span>
@@ -110,8 +110,8 @@ function PathsSlide() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 0, borderTop: "1px solid var(--sand-300)" }}>
           {PATHS.map((p) => (
             <div key={p.n} style={{ padding: "30px 30px 0 0", borderRight: p.n !== "03" ? "1px solid var(--sand-300)" : "none", paddingLeft: p.n === "01" ? 0 : 30 }}>
-              <span style={{ fontFamily: "var(--font-display)", fontSize: 22, color: "var(--brass-600)" }}>{p.n}</span>
-              <p style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--brass-700)", margin: "16px 0 0" }}>{p.label}</p>
+              <span style={{ fontFamily: "var(--font-display)", fontSize: 22, color: "var(--stone-400)" }}>{p.n}</span>
+              <p style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--stone-400)", margin: "16px 0 0" }}>{p.label}</p>
               <h3 style={{ fontFamily: "var(--font-display)", fontWeight: 500, fontSize: 25, lineHeight: 1.12, color: "var(--ink-900)", margin: "10px 0 12px", maxWidth: "14ch" }}>{p.title}</h3>
               <p style={{ fontSize: 14.5, lineHeight: 1.55, color: "var(--stone-500)", margin: 0, maxWidth: "26ch" }}>{p.desc}</p>
             </div>
@@ -141,7 +141,7 @@ function OwnersSlide() {
           {OWNERS.map((o) => (
             <div key={o.title} style={{ background: "var(--paper)", border: "1px solid var(--sand-300)", padding: "30px 28px", display: "flex", flexDirection: "column", minHeight: 280 }}>
               <h3 style={{ fontFamily: "var(--font-display)", fontWeight: 500, fontSize: 26, lineHeight: 1.12, color: "var(--ink-900)", margin: 0, minHeight: 58, flexShrink: 0 }}>{o.title}</h3>
-              <p style={{ fontSize: 14.5, lineHeight: 1.45, fontWeight: 500, color: "var(--brass-700)", margin: "10px 0 0", flexShrink: 0 }}>{o.sub}</p>
+              <p style={{ fontSize: 14.5, lineHeight: 1.45, fontWeight: 500, color: "var(--stone-500)", margin: "10px 0 0", flexShrink: 0 }}>{o.sub}</p>
               <p style={{ fontSize: 13, lineHeight: 1.55, color: "var(--stone-500)", margin: "16px 0 0", flex: 1 }}>{o.meta}</p>
               <div style={{ height: 1, background: "var(--sand-300)", margin: "16px 0 14px" }} />
               <span style={{ fontFamily: "var(--font-display)", fontWeight: 500, fontSize: 26, color: "var(--ink-900)" }}>{o.price}</span>
@@ -172,10 +172,10 @@ function BusinessSlide() {
           {BUSINESS.map((b) => (
             <div key={b.title} style={{ border: "1px solid var(--border-on-ink)", padding: "30px 28px", display: "flex", flexDirection: "column", minHeight: 260 }}>
               <h3 style={{ fontFamily: "var(--font-display)", fontWeight: 500, fontSize: 25, lineHeight: 1.12, color: "var(--cream-50)", margin: 0, minHeight: 56, flexShrink: 0 }}>{b.title}</h3>
-              <p style={{ fontSize: 14, lineHeight: 1.45, fontWeight: 500, color: "var(--brass-400)", margin: "10px 0 0", flexShrink: 0 }}>{b.sub}</p>
+              <p style={{ fontSize: 14, lineHeight: 1.45, fontWeight: 500, color: "rgba(247,242,233,0.65)", margin: "10px 0 0", flexShrink: 0 }}>{b.sub}</p>
               <p style={{ fontSize: 13, lineHeight: 1.55, color: "rgba(247,242,233,0.66)", margin: "16px 0 0", flex: 1 }}>{b.meta}</p>
               <div style={{ height: 1, background: "var(--border-on-ink)", margin: "16px 0 14px" }} />
-              <span style={{ fontFamily: "var(--font-display)", fontWeight: 500, fontSize: 26, color: "var(--brass-400)" }}>{b.price}</span>
+              <span style={{ fontFamily: "var(--font-display)", fontWeight: 500, fontSize: 26, color: "var(--cream-50)" }}>{b.price}</span>
             </div>
           ))}
         </div>
@@ -200,11 +200,11 @@ function AboutSlide() {
           </p>
           <div style={{ display: "flex", gap: 48, marginTop: 36 }}>
             <div>
-              <div style={{ fontFamily: "var(--font-display)", fontSize: 40, color: "var(--brass-600)", lineHeight: 1 }}>20+</div>
+              <div style={{ fontFamily: "var(--font-display)", fontSize: 40, color: "var(--ink-900)", lineHeight: 1 }}>20+</div>
               <div style={{ fontSize: 11, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--stone-500)", marginTop: 6 }}>лет практики</div>
             </div>
             <div>
-              <div style={{ fontFamily: "var(--font-display)", fontSize: 40, color: "var(--brass-600)", lineHeight: 1 }}>3</div>
+              <div style={{ fontFamily: "var(--font-display)", fontSize: 40, color: "var(--ink-900)", lineHeight: 1 }}>3</div>
               <div style={{ fontSize: 11, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--stone-500)", marginTop: 6 }}>направления</div>
             </div>
           </div>
@@ -233,7 +233,7 @@ function ContactSlide() {
           <Eyebrow onDark>Не уверены, с чего начать?</Eyebrow>
           <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 400, fontSize: 52, lineHeight: 1.02,
             letterSpacing: "-0.01em", color: "var(--cream-50)", margin: "18px 0 0", maxWidth: "14ch" }}>
-            Напишите — я помогу определить формат
+            Напишите, я помогу определить формат
           </h2>
           <p style={{ fontSize: 17, lineHeight: 1.6, color: "rgba(247,242,233,0.75)", maxWidth: "36ch", margin: "24px 0 0" }}>
             Каждая ситуация индивидуальна. Telegram · WhatsApp · телефон.
@@ -243,7 +243,7 @@ function ContactSlide() {
           {STEPS.map(([n, t], i) => (
             <div key={n} style={{ display: "flex", alignItems: "center", gap: 22, padding: "18px 0",
               borderTop: i === 0 ? "none" : "1px solid var(--border-on-ink)" }}>
-              <span style={{ fontFamily: "var(--font-display)", fontSize: 24, color: "var(--brass-400)", width: 34, flex: "none" }}>{n}</span>
+              <span style={{ fontFamily: "var(--font-display)", fontSize: 24, color: "rgba(247,242,233,0.45)", width: 34, flex: "none" }}>{n}</span>
               <span style={{ fontSize: 19, color: "var(--cream-50)" }}>{t}</span>
             </div>
           ))}
