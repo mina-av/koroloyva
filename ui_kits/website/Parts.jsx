@@ -52,13 +52,13 @@
   }
 
   // Offer card used by Owners & Business sections
-  function OfferCard({ title, subtitle, children, meta, note, tiers, price, ctaLabel, onNav, featured }) {
+  function OfferCard({ title, subtitle, children, meta, note, tiers, price, ctaLabel, onNav, featured, bg = "#F7F2E9" }) {
     const [h, setH] = React.useState(false);
     return (
       <article
         onMouseEnter={() => setH(true)} onMouseLeave={() => setH(false)}
         style={{ position: "relative", display: "flex", flexDirection: "column",
-          background: "#F7F2E9", border: "1px solid var(--sand-300)",
+          background: bg, border: "1px solid var(--sand-300)",
           padding: "36px 32px 30px", height: "100%",
           boxShadow: h ? "var(--shadow-md)" : "none",
           transition: "box-shadow var(--dur-base) var(--ease-out)" }}>
