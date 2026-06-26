@@ -270,7 +270,7 @@ function Eyebrow({
   ...rest
 }) {
   const Tag = as;
-  const color = onDark ? "var(--brass-400)" : "var(--brass-600)";
+  const color = onDark ? "rgba(247,242,233,0.55)" : "var(--stone-400)";
   return /*#__PURE__*/React.createElement(Tag, _extends({
     style: {
       display: "inline-flex",

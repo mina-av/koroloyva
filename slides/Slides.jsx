@@ -21,7 +21,7 @@ function Frame({ children, bg = "cream", image, index, label, style }) {
       )}
       <div style={{ position: "absolute", top: 44, left: 56, zIndex: 3,
         fontFamily: "var(--font-display)", fontWeight: 500, fontSize: 19, letterSpacing: "0.02em",
-        color: dark ? "var(--cream-50)" : "var(--ink-900)" }}>Тамила Королёва</div>
+        color: dark ? "var(--cream-50)" : "var(--ink-900)", letterSpacing: "0.1em", textTransform: "uppercase", fontSize: 13, fontFamily: "var(--font-sans)", fontWeight: 600 }}>ТАМИЛА КОРОЛЁВА</div>
       <div style={{ position: "absolute", bottom: 40, left: 56, right: 56, zIndex: 3, display: "flex",
         justifyContent: "space-between", alignItems: "center" }}>
         <span style={{ fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase",
