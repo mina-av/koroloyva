@@ -58,7 +58,7 @@
       <article
         onMouseEnter={() => setH(true)} onMouseLeave={() => setH(false)}
         style={{ position: "relative", display: "flex", flexDirection: "column",
-          background: "var(--surface-paper)", border: "1px solid var(--sand-300)",
+          background: "#F7F2E9", border: "1px solid var(--sand-300)",
           padding: "36px 32px 30px", height: "100%",
           boxShadow: h ? "var(--shadow-md)" : "none",
           transition: "box-shadow var(--dur-base) var(--ease-out)" }}>
