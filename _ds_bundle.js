@@ -1370,7 +1370,7 @@ try { (() => {
         position: "relative"
       }
     }, /*#__PURE__*/React.createElement("img", {
-      src: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1100&q=80",
+      src: "../../tamila_korolyova.png",
       alt: "\u0422\u0430\u043C\u0438\u043B\u0430 \u041A\u043E\u0440\u043E\u043B\u0451\u0432\u0430",
       style: {
         width: "100%",
@@ -1465,7 +1465,7 @@ try { (() => {
   const {
     KFNumberTag
   } = window;
-  const ABOUT_IMG = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1100&q=80";
+  const ABOUT_IMG = "../../tamila_korolyova.png";
   function About() {
     return /*#__PURE__*/React.createElement("section", {
       id: "about",

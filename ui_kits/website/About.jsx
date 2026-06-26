@@ -2,7 +2,7 @@
 (function () {
 const { KFNumberTag } = window;
 
-const ABOUT_IMG = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1100&q=80";
+const ABOUT_IMG = "../../tamila_korolyova.png";
 
 function About() {
   return (

@@ -210,7 +210,7 @@ function AboutSlide() {
           </div>
         </div>
         <div style={{ position: "relative" }}>
-          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1100&q=80"
+          <img src="../tamila_korolyova.png"
             alt="Тамила Королёва" style={{ width: "100%", height: "100%", objectFit: "cover", filter: "saturate(0.92)" }} />
         </div>
       </div>
