@@ -1,0 +1,26 @@
+<!-- @dsCard group="Colors" viewport="700x150" name="Sand & Cream — surfaces" subtitle="Page, paper, raised & hairline" -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; padding: 22px 26px; background: var(--ink-900); }
+  .row { display: flex; gap: 0; }
+  .sw { flex: 1; height: 96px; display: flex; flex-direction: column; justify-content: flex-end; padding: 10px 12px; border-right: 1px solid var(--sand-300); }
+  .sw:last-child { border-right: 0; }
+  .sw span { font-family: var(--font-sans); font-size: 11px; letter-spacing: .04em; color: var(--ink-900); }
+  .name { font-weight: 600; }
+  .hex { opacity: .65; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="sw" style="background:var(--paper)"><span class="name">paper</span><span class="hex">#FFFFFF</span></div>
+    <div class="sw" style="background:var(--cream-50)"><span class="name">cream-50</span><span class="hex">#F7F2E9</span></div>
+    <div class="sw" style="background:var(--sand-100)"><span class="name">sand-100</span><span class="hex">#F3EEE3</span></div>
+    <div class="sw" style="background:var(--sand-200)"><span class="name">sand-200</span><span class="hex">#EDE6D9</span></div>
+    <div class="sw" style="background:var(--sand-300)"><span class="name">sand-300</span><span class="hex">#E4DCCE</span></div>
+  </div>
+</body>
+</html>

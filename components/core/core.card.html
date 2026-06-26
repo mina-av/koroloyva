@@ -1,0 +1,89 @@
+<!-- @dsCard group="Components" viewport="700x600" name="Core — Buttons, Inputs, Badges" subtitle="Actions, labels, fields, dividers" -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  body { margin: 0; padding: 30px 32px; background: var(--surface-paper); }
+  .grp { margin-bottom: 26px; }
+  .lab { font-family: var(--font-sans); font-size: 10px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--stone-400); margin-bottom: 14px; }
+  .row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+  .dark { background: var(--ink-900); padding: 22px; border-radius: var(--radius-sm); }
+</style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <script src="../../_ds_bundle.js"></script>
+
+  <script type="text/babel">
+    const { Button, IconButton, Badge, Eyebrow, Input, Divider } = window.KorolyovaDesignSystem_d31d2b;
+
+    function Demo() {
+      const [v, setV] = React.useState("");
+      return (
+        <div>
+          <div className="grp">
+            <div className="lab">Buttons</div>
+            <div className="row">
+              <Button variant="primary" withArrow>Beratung anfragen</Button>
+              <Button variant="accent">Kurs sichern</Button>
+              <Button variant="secondary">Mehr erfahren</Button>
+              <Button variant="ghost" withArrow>Objekt ansehen</Button>
+              <Button variant="primary" disabled>Gesperrt</Button>
+            </div>
+          </div>
+
+          <div className="grp">
+            <div className="lab">Sizes</div>
+            <div className="row">
+              <Button size="sm">Small</Button>
+              <Button size="md">Medium</Button>
+              <Button size="lg">Large</Button>
+              <IconButton icon="arrow-right" label="Weiter" variant="solid" />
+              <IconButton icon="phone" label="Anrufen" />
+              <IconButton icon="bookmark" label="Merken" variant="ghost" />
+            </div>
+          </div>
+
+          <div className="grp">
+            <div className="lab">Eyebrow &amp; Badges</div>
+            <div className="row">
+              <Eyebrow>Ausgewählte Objekte</Eyebrow>
+              <Badge tone="accent">Neu</Badge>
+              <Badge tone="ink">Exklusiv</Badge>
+              <Badge tone="neutral">München · Bogenhausen</Badge>
+              <Badge tone="outline">Off-Market</Badge>
+            </div>
+          </div>
+
+          <div className="grp">
+            <div className="lab">Input &amp; Divider</div>
+            <div style={{ maxWidth: 320 }}>
+              <Input label="E-Mail" placeholder="ihre@adresse.de" value={v} onChange={(e) => setV(e.target.value)} />
+            </div>
+            <div style={{ margin: "20px 0" }}><Divider ornament /></div>
+          </div>
+
+          <div className="dark">
+            <div className="row">
+              <Button variant="accent">Auf Dunkel</Button>
+              <Button variant="secondary" onDark>Outline</Button>
+              <Button variant="ghost" onDark withArrow>Ghost</Button>
+              <IconButton icon="menu" label="Menü" onDark />
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<Demo />);
+    setTimeout(() => window.lucide && window.lucide.createIcons(), 60);
+  </script>
+</body>
+</html>

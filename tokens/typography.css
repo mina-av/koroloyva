@@ -1,0 +1,76 @@
+/* ==========================================================================
+   KOROLYOVA — Typography
+   Editorial high-contrast serif for display, quiet humanist grotesk for text.
+   Eyebrows/labels: uppercase grotesk, wide tracking, small.
+   ========================================================================== */
+
+:root {
+  /* --- Families ----------------------------------------------------------- */
+  --font-display: "Cormorant", "Cormorant Garamond", "Hoefler Text", Georgia, serif;
+  --font-sans:    "Onest", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono:    "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* --- Weights ------------------------------------------------------------ */
+  --weight-light:    300;
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  /* --- Display scale (serif) — fluid for hero work ------------------------ */
+  --text-display-1: clamp(3.5rem, 8vw, 7rem); /* @kind spacing */
+  --text-display-2: clamp(2.75rem, 6vw, 5rem);  /* @kind spacing */
+  --text-display-3: clamp(2.25rem, 4.5vw, 3.5rem); /* @kind spacing */
+
+  /* --- Headings ----------------------------------------------------------- */
+  --text-h1: 2.5rem;    /* 40 */
+  --text-h2: 2rem;      /* 32 */
+  --text-h3: 1.5rem;    /* 24 */
+  --text-h4: 1.25rem;   /* 20 */
+
+  /* --- Body (grotesk) ----------------------------------------------------- */
+  --text-lead: 1.3125rem; /* 21 — intro paragraphs */
+  --text-body: 1.0625rem; /* 17 */
+  --text-sm:   0.9375rem; /* 15 */
+  --text-xs:   0.8125rem; /* 13 */
+
+  /* --- Eyebrow / label ---------------------------------------------------- */
+  --text-eyebrow: 0.75rem;  /* 12 */
+
+  /* --- Line heights ------------------------------------------------------- */
+  --leading-tight:  1.04;   /* display headlines        */
+  --leading-snug:   1.18;
+  --leading-normal: 1.5;
+  --leading-relaxed:1.65;   /* long-form body           */
+
+  /* --- Tracking ----------------------------------------------------------- */
+  --tracking-display: -0.01em;
+  --tracking-tight:  -0.005em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.08em;
+  --tracking-eyebrow: 0.22em;  /* uppercase labels */
+}
+
+/* ---- Optional convenience classes (tokens are the source of truth) ------- */
+.kf-display {
+  font-family: var(--font-display);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-display);
+  color: var(--text-primary);
+}
+.kf-eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--text-eyebrow);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--text-accent);
+}
+.kf-body {
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-relaxed);
+  color: var(--text-secondary);
+}

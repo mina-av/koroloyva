@@ -1,0 +1,25 @@
+<!-- @dsCard group="Colors" viewport="700x160" name="Semantic & status" subtitle="Muted only — luxury is never neon" -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; padding: 22px 26px; background: var(--surface-paper); font-family: var(--font-sans); }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .item { display: flex; align-items: center; gap: 10px; font-size: 12px; color: var(--ink-900); }
+  .chip { width: 30px; height: 30px; border-radius: var(--radius-xs); flex: none; }
+  .item b { font-weight: 600; }
+  .item span { color: var(--stone-500); }
+  .sec { font-size: 11px; letter-spacing: .22em; text-transform: uppercase; color: var(--brass-600); font-weight: 600; margin: 0 0 12px; }
+</style>
+</head>
+<body>
+  <div class="sec">Status</div>
+  <div class="grid">
+    <div class="item"><span class="chip" style="background:var(--green-600)"></span><div><b>green-600</b><br><span>Erfolg</span></div></div>
+    <div class="item"><span class="chip" style="background:var(--amber-600)"></span><div><b>amber-600</b><br><span>Hinweis</span></div></div>
+    <div class="item"><span class="chip" style="background:var(--red-600)"></span><div><b>red-600</b><br><span>Fehler</span></div></div>
+  </div>
+</body>
+</html>

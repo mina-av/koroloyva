@@ -1,0 +1,24 @@
+<!-- @dsCard group="Type" viewport="700x300" name="Type scale" subtitle="Display serif → grotesk body" -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; padding: 24px 30px; background: var(--surface-paper); }
+  .row { display: flex; align-items: baseline; gap: 16px; padding: 7px 0; border-bottom: 1px solid var(--sand-200); }
+  .row:last-child { border-bottom: 0; }
+  .tok { font-family: var(--font-sans); font-size: 11px; color: var(--stone-400); width: 130px; flex: none; letter-spacing: .03em; }
+  .ex-serif { font-family: var(--font-display); color: var(--ink-900); line-height: 1; }
+  .ex-sans { font-family: var(--font-sans); color: var(--ink-900); }
+</style>
+</head>
+<body>
+  <div class="row"><span class="tok">display-2 · serif</span><span class="ex-serif" style="font-size:46px">Lagen mit Zukunft</span></div>
+  <div class="row"><span class="tok">h2 · serif</span><span class="ex-serif" style="font-size:32px">Renditeobjekte</span></div>
+  <div class="row"><span class="tok">h4 · serif</span><span class="ex-serif" style="font-size:20px">Beratung & Kurse</span></div>
+  <div class="row"><span class="tok">lead · sans</span><span class="ex-sans" style="font-size:21px">Diskret. Fundiert. Langfristig.</span></div>
+  <div class="row"><span class="tok">body · sans</span><span class="ex-sans" style="font-size:16px;color:var(--stone-500)">Aufbau eines Immobilienportfolios.</span></div>
+  <div class="row"><span class="tok">xs · sans</span><span class="ex-sans" style="font-size:13px;color:var(--stone-400)">Stand der Marktdaten Q2 2026</span></div>
+</body>
+</html>

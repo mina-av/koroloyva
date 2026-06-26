@@ -1,0 +1,26 @@
+<!-- @dsCard group="Colors" viewport="700x150" name="Ink — warm near-blacks" subtitle="Primary text & dark editorial sections" -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; padding: 22px 26px; background: var(--surface-paper); }
+  .row { display: flex; gap: 0; }
+  .sw { flex: 1; height: 96px; display: flex; flex-direction: column; justify-content: flex-end; padding: 10px 12px; }
+  .sw span { font-family: var(--font-sans); font-size: 11px; letter-spacing: .04em; }
+  .name { font-weight: 600; }
+  .hex { opacity: .7; }
+  .on-dark span { color: var(--cream-50); }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="sw on-dark" style="background:var(--ink-900)"><span class="name">ink-900</span><span class="hex">#16130F</span></div>
+    <div class="sw on-dark" style="background:var(--ink-800)"><span class="name">ink-800</span><span class="hex">#211C16</span></div>
+    <div class="sw on-dark" style="background:var(--ink-700)"><span class="name">ink-700</span><span class="hex">#2E2820</span></div>
+    <div class="sw on-dark" style="background:var(--ink-600)"><span class="name">ink-600</span><span class="hex">#443C31</span></div>
+    <div class="sw on-dark" style="background:var(--ink-500)"><span class="name">ink-500</span><span class="hex">#5C5244</span></div>
+  </div>
+</body>
+</html>

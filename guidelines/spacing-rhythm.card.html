@@ -1,0 +1,22 @@
+<!-- @dsCard group="Spacing" viewport="700x230" name="Measure & rhythm" subtitle="Readable line length, section air" -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; padding: 26px 30px; background: var(--surface-paper); font-family: var(--font-sans); }
+  .eyebrow { font-size: 11px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; color: var(--brass-600); margin-bottom: 14px; }
+  .measure { max-width: 52ch; border-left: 2px solid var(--brass-500); padding-left: 18px; }
+  .measure p { font-size: 15px; line-height: 1.65; color: var(--stone-500); }
+  .note { font-size: 11px; color: var(--stone-400); margin-top: 16px; }
+</style>
+</head>
+<body>
+  <div class="eyebrow">Measure · 66ch max</div>
+  <div class="measure">
+    <p>Großzügiger Weißraum und eine ruhige Zeilenlänge signalisieren Wertigkeit. Fließtext bleibt unter 66 Zeichen pro Zeile; Sektionen atmen mit --section-y (144 px).</p>
+  </div>
+  <div class="note">--measure 66ch · --section-y 144 · --gutter clamp(20–64px)</div>
+</body>
+</html>
